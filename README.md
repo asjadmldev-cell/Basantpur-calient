@@ -26,7 +26,8 @@ Receipt tests cover exact currency totals, split CGST/SGST and IGST, discount-be
 - `#/products`: image catalog with search, categories, sorting, favorites and cart.
 - `#/products/new`: add a product with category, brand, unique optional SKU, price, MRP, description and optional image (PNG/JPG/WebP up to 2 MB).
 - `#/billing/new`: dedicated receipt editor with editable business identity, customer details, catalog/custom line items, discount, optional tax, payments and notes.
-- `#/receipt/<id>`: saved bill preview, editing and A4 printing.
+- `#/receipt/<id>`: saved bill editing and A4 printing.
+- `#/receipt-preview/<id>`: standalone invoice preview. Open / Print in receipt history opens this page in a new tab, with Edit bill and Print / Save PDF actions. Printing waits for the logo and fonts to load.
 - `#/receipts`: searchable history and JSON backup download containing receipts and custom products.
 
 Generate & save receipt commits the complete bill to IndexedDB before showing success. A new bill receives a unique ID; saving edits updates the existing bill. The blue-and-green invoice layout includes the supplied logo, contact details, customer block, item table, watermark, tax breakdown, totals, amount in words and signature area. Print / Save PDF opens the browser print dialog. Disable browser headers and footers for a clean A4 document.
