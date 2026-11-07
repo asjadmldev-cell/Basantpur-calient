@@ -1,0 +1,254 @@
+[
+  {
+    "id": 1,
+    "image": "/products/product-1.jpg",
+    "source": "https://sigmatiendas.com/cdn/shop/files/Procesador-Intel-Core-i7-14700K-20-Nucleos-3_4GHz-30MB-cache-Socket-LGA1700_1_grande.jpg?v=1738682164",
+    "width": 600,
+    "height": 600
+  },
+  {
+    "id": 2,
+    "image": "/products/product-2.jpg",
+    "source": "https://cdn.panacompu.com/cdn-img/pv/msi-geforce-rtx-4060-ventus-2x-black-8g-oc-front-view.jpg?fixedwidthheight=false&height=780&width=780",
+    "width": 780,
+    "height": 623
+  },
+  {
+    "id": 3,
+    "image": "/products/product-3.jpg",
+    "source": "https://i5.walmartimages.com/asr/7fef5cba-011e-4c35-80db-cc8c5cf54661.81c5502b843dd4ba92d5dca0fd06d2b8.jpeg",
+    "width": 2560,
+    "height": 1920
+  },
+  {
+    "id": 4,
+    "image": "/products/product-4.jpg",
+    "source": "https://images.samsung.com/kdp/goods/2022/09/21/287ad1ec-ecef-40e3-be01-51051ff65ccb.png",
+    "width": 1920,
+    "height": 1280
+  },
+  {
+    "id": 5,
+    "image": "/products/product-5.jpg",
+    "source": "https://hiraoka.com.pe/media/catalog/product/u/l/ultragear-27gs65f-gallery-01-2010.jpg?bg-color=255%2C255%2C255&canvas=700%3A560&fit=bounds&height=560&quality=85&width=700",
+    "width": 700,
+    "height": 560
+  },
+  {
+    "id": 6,
+    "image": "/products/product-6.jpg",
+    "source": "https://m.media-amazon.com/images/I/71ANhRN6eNL._SL1280_.jpg",
+    "width": 1280,
+    "height": 1280
+  },
+  {
+    "id": 7,
+    "image": "/products/product-7.jpg",
+    "source": "https://asset.msi.com/resize/image/global/product/product_16764494661743671569a36321483cdfa4dfc06de1.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png",
+    "width": 1024,
+    "height": 819
+  },
+  {
+    "id": 8,
+    "image": "/products/product-8.jpg",
+    "source": "https://images.tcdn.com.br/img/img_prod/833676/fonte_atx_650w_cv_80_plus_bronze_atx_12v_v2_31_corsair_1705_2_509e5dff496ad0a75986a01444ca1ca2.jpg",
+    "width": 1000,
+    "height": 1000
+  },
+  {
+    "id": 9,
+    "image": "/products/product-9.jpg",
+    "source": "https://www.vedantcomputers.com/image/cache/catalog/assets/product/deepcool/cpu-cooler/r-ag400-bkanmc-g-1/r-ag400-bkanmc-g-1-1-1000x1000.JPG",
+    "width": 1000,
+    "height": 1000
+  },
+  {
+    "id": 10,
+    "image": "/products/product-10.jpg",
+    "source": "https://in.store.asus.com/media/catalog/product/v/i/vivobook_15_x1504z_x1504v_product_photo_1b_quite_blue_05_1.jpg",
+    "width": 5000,
+    "height": 5000
+  },
+  {
+    "id": 11,
+    "image": "/products/product-11.jpg",
+    "source": "https://elitehubs.com/cdn/shop/files/71bRpWfwNFL._SL1500__result_26ec62da-e221-4cca-9740-f153c91c78bb.jpg?v=1721822410",
+    "width": 1000,
+    "height": 1000
+  },
+  {
+    "id": 12,
+    "image": "/products/product-12.jpg",
+    "source": "https://m.media-amazon.com/images/I/41Ms0-19o6L._SL500_.jpg",
+    "width": 500,
+    "height": 500
+  },
+  {
+    "id": 13,
+    "image": "/products/product-13.jpg",
+    "source": "https://www.beattys.ie/cdn/shop/files/10128275_1-651073.png?v=1729818294&width=1214",
+    "width": 1080,
+    "height": 1080
+  },
+  {
+    "id": 14,
+    "image": "/products/product-14.jpg",
+    "source": "https://media-ik.croma.com/Croma%20Assets/Computers%20Peripherals/Desktops/Images/226805_0_d3kj2m.png",
+    "width": 1600,
+    "height": 1600
+  },
+  {
+    "id": 15,
+    "image": "/products/product-15.jpg",
+    "source": "https://cdn.idealo.com/folder/Product/202916/6/202916676/s4_produktbild_max/belkin-ultrahd-hdmi-cable-2018-2-2m.jpg",
+    "width": 435,
+    "height": 935
+  },
+  {
+    "id": 16,
+    "image": "/products/product-16.jpg",
+    "source": "https://es.targus.com/cdn/shop/products/targus-laptop-bags-targus-15-6-16-inch-mobile-elite-topload-briefcase-black-36235509792966_1024x1024.jpg?v=1706612239",
+    "width": 1024,
+    "height": 1024
+  },
+  {
+    "id": 17,
+    "image": "/products/product-17.jpg",
+    "source": "https://lizenzguenstiger.de/cdn/shop/products/windows-11-home-865514.jpg?v=1729510690&width=1200",
+    "width": 1200,
+    "height": 1200
+  },
+  {
+    "id": 18,
+    "image": "/products/product-18.jpg",
+    "source": "https://vishalperipherals.com/cdn/shop/files/51s3L05fyDL.jpg?v=1757655106&width=1445",
+    "width": 500,
+    "height": 500
+  },
+  {
+    "id": 19,
+    "image": "/products/product-19.jpg",
+    "source": "https://www.vitalimax.lt/images/uploader/ws/1080x1440.g/wsslh3glwcxkk8l8uklesuofbcktyvwsmnw7cibfmyzjremt6miurfngar1uvjskquhnyrfkpp6bxxhae6klfw6dcty3d_v7a5h5d9t0y0a1x76783h6r5o47115v9.jpg?v=1775899706",
+    "width": 1080,
+    "height": 1440
+  },
+  {
+    "id": 20,
+    "image": "/products/product-20.jpg",
+    "source": "https://skay.ua/274076-large_default/apple-mac-mini-m4-chip-16256gb-mu9d3-2024.jpg",
+    "width": 458,
+    "height": 458
+  },
+  {
+    "id": 21,
+    "image": "/products/product-21.jpg",
+    "source": "https://cdn.panacompu.com/cdn-img/pv/hp-all-in-one-24-cr0250la-front-view.jpg?fixedwidthheight=false&height=780&width=780",
+    "width": 779,
+    "height": 652
+  },
+  {
+    "id": 22,
+    "image": "/products/product-22.jpg",
+    "source": "https://cdn.cimri.io/image/1200x1200/logitech-g502-hero-gaming-mouse_281381099.jpg",
+    "width": 1200,
+    "height": 1200
+  },
+  {
+    "id": 23,
+    "image": "/products/product-23.jpg",
+    "source": "https://vivadigital.com.co/img/products/Teclado_Mecnico_KUMARA_K552_Redragon_Black/Teclado_Mecnico_KUMARA_K552_Redragon_Black16504023311.jpg",
+    "width": 442,
+    "height": 447
+  },
+  {
+    "id": 24,
+    "image": "/products/product-24.jpg",
+    "source": "https://ca.hyperx.com/cdn/shop/files/hyperx_cloud_ii_red_3_detachable.jpg?v=1764747233",
+    "width": 4000,
+    "height": 4000
+  },
+  {
+    "id": 25,
+    "image": "/products/product-25.jpg",
+    "source": "https://images.visunextgroup.com/images/D/original/2/1000011950/nl/logitech/Logitech-C920-HD-PRO-webcam.jpg",
+    "width": 1600,
+    "height": 1374
+  },
+  {
+    "id": 26,
+    "image": "/products/product-26.jpg",
+    "source": "https://c1.neweggimages.com/ProductImageCompressAll1280/0S6-004H-00065-V01.jpg",
+    "width": 1280,
+    "height": 960
+  },
+  {
+    "id": 27,
+    "image": "/products/product-27.jpg",
+    "source": "https://down-th.img.susercontent.com/file/th-11134202-7r98z-ls83cj232btrb9",
+    "width": 800,
+    "height": 800
+  },
+  {
+    "id": 28,
+    "image": "/products/product-28.jpg",
+    "source": "https://cdn.panacompu.com/cdn-img/pv/seagate-expansion-2tb-package-view.jpg?fixedwidthheight=false&height=780&width=780",
+    "width": 778,
+    "height": 780
+  },
+  {
+    "id": 29,
+    "image": "/products/product-29.jpg",
+    "source": "https://cdn3.botland.com.pl/103599/sandisk-ultra-flair-pamiec-usb-30-pendrive-128gb.jpg",
+    "width": 1080,
+    "height": 1080
+  },
+  {
+    "id": 30,
+    "image": "/products/product-30.jpg",
+    "source": "https://www.levix.nl/media/18/81/35/1697732687/42f668fbe56080a2927dd1c24de33b65.jpg?ts=1697732687",
+    "width": 1000,
+    "height": 1000
+  },
+  {
+    "id": 31,
+    "image": "/products/product-31.jpg",
+    "source": "https://techstoreltd.com/images/thumbs/0009177_tp-link-tl-sg108-8-port-gigabit-switch-metal-case_800.png",
+    "width": 800,
+    "height": 800
+  },
+  {
+    "id": 32,
+    "image": "/products/product-32.jpg",
+    "source": "https://m.media-amazon.com/images/I/61jTYo7ukyL._AC_SX569_.jpg",
+    "width": 569,
+    "height": 958
+  },
+  {
+    "id": 33,
+    "image": "/products/product-33.jpg",
+    "source": "https://i5.walmartimages.com/seo/ARCTIC-MX-4-4g-Ultimate-Performance-Thermal-Paste-for-All-Processors-CPU-GPU-PC-PS4-Xbox_f93433fc-8874-4a92-9bbf-b87fb831ab46.70af5e9f060755558afcaa3e4c463fbf.jpeg",
+    "width": 1200,
+    "height": 1200
+  },
+  {
+    "id": 34,
+    "image": "/products/product-34.jpg",
+    "source": "https://cloudflare.shopincdn.ovh/database_images_urls/76/f5/dc/76f5dc4a6383803264f6708118e412cc95b04203_480_480.jpg",
+    "width": 480,
+    "height": 480
+  },
+  {
+    "id": 35,
+    "image": "/products/product-35.jpg",
+    "source": "https://snpi.dell.com/snp/images/products/large/en-us~AD401321/AD401321.jpg",
+    "width": 500,
+    "height": 500
+  },
+  {
+    "id": 36,
+    "image": "/products/product-36.jpg",
+    "source": "https://www.portronics.com/cdn/shop/files/Image1_adc4badf-9435-450e-8577-1991371d1967_1440x.png?v=1705665407",
+    "width": 1200,
+    "height": 1200
+  }
+]
