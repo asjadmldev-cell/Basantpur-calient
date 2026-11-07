@@ -16,8 +16,14 @@ npm run build
 npm run preview
 ```
 
-Includes category and product search, featured/new/bestseller/offer filters, sorting, product details, cart quantity editing, favorites, a PC component picker, and a receipt composer with print-to-PDF. Cart and receipt summaries are saved in this browser's local storage.
+Includes category and product search, featured/new/bestseller/offer filters, sorting, product details, cart quantity editing, favorites, a PC component picker, and a receipt composer with print-to-PDF. Cart and full receipt snapshots are saved in this browser's local storage.
 
-This deliverable is a UI design prototype, matching the user's request. Catalog, ratings, availability, prices, and store contact information are illustrative. It does not implement authentication, a backend/database, inventory transactions, payment processing, or GST tax invoicing. The receipt is explicitly labeled as a preview. Receipt tax configuration and production services require a separate implementation.
+This deliverable is a UI design prototype, matching the user's request. Catalog, ratings, availability, prices, and store contact information are illustrative. It does not implement authentication, a backend/database, inventory transactions, payment processing, or GST tax invoicing. Receipts record manually entered payment details and are not GST tax invoices. Receipt tax configuration and production services require a separate implementation.
 
 The catalog includes 36 locally stored product photos across 20 categories. Image source URLs are recorded in product-image-sources.json. The supplied reference image is used for the hero only. Confirm exact model photography and image rights before production use. The header has no All Categories menu; category discovery is available in the main image grid.
+
+## Receipt editor
+
+Generate Receipt is in the header, outside the hero banner. Store name, tagline, logo (PNG/JPG/WebP up to 1 MB), address, phone, email, GSTIN and terms are editable. Store profiles can be remembered locally. Receipts include customer details, SKU, quantities, editable unit prices, custom items, discount, payment reference, amount received, balance, amount in words and a signature area. Save receipt stores the full document; open it again from My Account to edit or print. Print / Save PDF opens the browser print dialog with an A4 stylesheet. For a clean document, disable browser headers and footers in that dialog. No payments are processed.
+
+Validation: `node tests/receipt.test.mjs` checks currency arithmetic, payment and discount bounds, quantity validation, amount in words and ID uniqueness.
