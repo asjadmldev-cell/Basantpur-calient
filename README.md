@@ -1,6 +1,6 @@
-# TechStore UI
+# Computer Gear workspace
 
-Responsive React + TypeScript hardware storefront based on the supplied design reference.
+React + TypeScript hardware catalog, dashboard and local billing workspace.
 
 ## Run
 
@@ -9,21 +9,34 @@ npm install
 npm run dev
 ```
 
-## Build
+Local preview: http://localhost:5173
+
+## Build and validation
 
 ```sh
 npm run build
-npm run preview
+node tests/receipt.test.mjs
 ```
 
-Includes category and product search, featured/new/bestseller/offer filters, sorting, product details, cart quantity editing, favorites, a PC component picker, and a receipt composer with print-to-PDF. Cart and full receipt snapshots are saved in this browser's local storage.
+Receipt tests cover exact currency totals, split CGST/SGST and IGST, discount-before-tax, payments, invalid inputs, legacy no-tax receipts, amount in words and ID uniqueness.
 
-This deliverable is a UI design prototype, matching the user's request. Catalog, ratings, availability, prices, and store contact information are illustrative. It does not implement authentication, a backend/database, inventory transactions, payment processing, or GST tax invoicing. Receipts record manually entered payment details and are not GST tax invoices. Receipt tax configuration and production services require a separate implementation.
+## Pages
 
-The catalog includes 36 locally stored product photos across 20 categories. Image source URLs are recorded in product-image-sources.json. The supplied reference image is used for the hero only. Confirm exact model photography and image rights before production use. The header has no All Categories menu; category discovery is available in the main image grid.
+- `#/dashboard`: summary cards, recent activity and billing trends. Chart data is clearly labeled as sample data until receipts exist.
+- `#/products`: image catalog with search, categories, sorting, favorites and cart.
+- `#/products/new`: add a product with category, brand, unique optional SKU, price, MRP, description and optional image (PNG/JPG/WebP up to 2 MB).
+- `#/billing/new`: dedicated receipt editor with editable business identity, customer details, catalog/custom line items, discount, optional tax, payments and notes.
+- `#/receipt/<id>`: saved bill preview, editing and A4 printing.
+- `#/receipts`: searchable history and JSON backup download containing receipts and custom products.
 
-## Receipt editor
+Generate & save receipt commits the complete bill to IndexedDB before showing success. A new bill receives a unique ID; saving edits updates the existing bill. The blue-and-green invoice layout includes the supplied logo, contact details, customer block, item table, watermark, tax breakdown, totals, amount in words and signature area. Print / Save PDF opens the browser print dialog. Disable browser headers and footers for a clean A4 document.
 
-Generate Receipt is in the header, outside the hero banner. Store name, tagline, logo (PNG/JPG/WebP up to 1 MB), address, phone, email, GSTIN and terms are editable. Store profiles can be remembered locally. Receipts include customer details, SKU, quantities, editable unit prices, custom items, discount, payment reference, amount received, balance, amount in words and a signature area. Save receipt stores the full document; open it again from My Account to edit or print. Print / Save PDF opens the browser print dialog with an A4 stylesheet. For a clean document, disable browser headers and footers in that dialog. No payments are processed.
+## Local persistence
 
-Validation: `node tests/receipt.test.mjs` checks currency arithmetic, payment and discount bounds, quantity validation, amount in words and ID uniqueness.
+Receipts and user-added products are stored in the `computer-gear-workspace` IndexedDB database. Earlier receipts in `techstore-receipts` local storage migrate without overwriting newer records. Cart and remembered shop details retain their original local-storage keys. Storage failures are reported instead of claiming a successful save.
+
+Data persists across reloads in the same browser and origin. It does not sync between browsers or devices; private browsing and clearing site data remove local records. Download backups from Receipts before clearing browser data. There is no arbitrary receipt-count limit, but browser storage quotas apply.
+
+The starter catalog contains 36 sample products in 20 categories with local photos. Image source URLs are recorded in `product-image-sources.json`. Product prices, reviews and availability are sample content. Added products do not receive sample ratings. Shop contact fields default to the latest supplied invoice reference and remain editable.
+
+There is no server, authentication, payment processing, inventory transaction engine, or government filing integration. Optional tax arithmetic uses the manually selected rate for the whole bill, with each component rounded to paise. Receipt payment details are entered manually.
