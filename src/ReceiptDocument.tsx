@@ -2,7 +2,7 @@ import { MapPin, Phone, Mail, Monitor } from 'lucide-react';
 import { amountInWords, calculateInvoice, currency, type ReceiptData } from './receipt-model';
 export default function ReceiptDocument({data}:{data:ReceiptData}) {
  const totals=calculateInvoice(data),tax=data.tax;
- const storeName=data.store.name==='Computer Gear'?<>Computer <em>Gear</em></>:data.store.name;
+ const storeName=(data.store.name==='Computer Care'||data.store.name==='Computer Gear')?<>Computer <em>Care</em></>:data.store.name;
  return <article className="receipt-paper invoice-sheet" aria-label="Bill / Invoice document">
   <header className="invoice-letterhead"><div className="invoice-store"><div className="invoice-name"><h1>{storeName}</h1><p>{data.store.tagline}</p></div><div className="invoice-contact"><p><MapPin/><span>{data.store.address}</span></p>{data.store.phone&&<p><Phone/><span>{data.store.phone}</span></p>}{data.store.email&&<p><Mail/><span>{data.store.email}</span></p>}{data.store.gstin&&<p><b>GSTIN</b><span>{data.store.gstin}</span></p>}</div></div><div className="invoice-brand">{data.store.logo?<img src={data.store.logo} alt={`${data.store.name} logo`}/>:<Monitor size={65}/>}</div></header>
   <div className="invoice-title"><i/><h2>Bill / Invoice</h2><i/></div>

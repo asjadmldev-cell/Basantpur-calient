@@ -2,7 +2,7 @@ export type ReceiptItem = { id: string; name: string; sku: string; qty: number; 
 export type StoreProfile = { name: string; tagline: string; address: string; phone: string; email: string; gstin: string; logo: string; terms: string };
 export type TaxConfig = { mode: 'none' | 'split' | 'igst'; rate: number };
 export type ReceiptData = { tax?: TaxConfig; id: string; issuedAt: string; store: StoreProfile; customer: { name: string; phone: string; email: string; address: string; gstin: string }; items: ReceiptItem[]; discount: number; received: number; paymentMethod: string; reference: string; notes: string };
-export const defaultStore: StoreProfile = { name: 'Computer Gear', tagline: 'Computer Components & IT Hardware', address: 'Main Road, Madarpur, Near Jalal Market, Siwan, Bihar – 841226', phone: '+91 98765 43210', email: 'info@computergear.in', gstin: '', logo: '/computer-gear-logo.png', terms: 'Please retain this receipt for service and warranty enquiries. Product warranties are subject to the manufacturer’s terms.' };
+export const defaultStore: StoreProfile = { name: 'Computer Care', tagline: 'Computer Components & IT Hardware', address: 'Main Road, Madarpur, Near Jalal Market, Siwan, Bihar – 841226', phone: '+91 98765 43210', email: 'info@computercare.in', gstin: '', logo: '/computer-care-logo.png', terms: 'Please retain this receipt for service and warranty enquiries. Product warranties are subject to the manufacturer’s terms.' };
 export const currency = (value: number) => new Intl.NumberFormat('en-IN', {style:'currency', currency:'INR', minimumFractionDigits:2}).format(value);
 export const paise = (value: number) => Math.round(value * 100);
 export function calculateReceipt(items: ReceiptItem[], discount: number, received: number) {
@@ -46,4 +46,4 @@ function words(n:number):string {
  return '';
 }
 export function amountInWords(value:number){const p=paise(value);return 'Rupees '+words(Math.floor(p/100))+(p%100?' and '+words(p%100)+' Paise':'')+' Only';}
-export function createReceiptId(){return 'CG-'+new Date().toLocaleDateString('en-CA',{timeZone:'Asia/Kolkata'}).replaceAll('-','')+'-'+crypto.randomUUID().slice(0,8).toUpperCase();}
+export function createReceiptId(){return 'CC-'+new Date().toLocaleDateString('en-CA',{timeZone:'Asia/Kolkata'}).replaceAll('-','')+'-'+crypto.randomUUID().slice(0,8).toUpperCase();}

@@ -4,3 +4,9 @@
 @media print{#root .cg-app,#root .cg-main,#root .cg-workspace,#root .workspace-page,#root .billing-workspace{display:block!important;position:static!important;margin:0!important;padding:0!important;width:100%!important;max-width:none!important;background:white!important;overflow:visible!important;height:auto!important}#root .cg-sidebar,#root .cg-topbar,#root .billing-page-nav,#root .cg-scrim,#root>.toast,#root>.overlay{display:none!important}.billing-workspace>*:not(.receipt-paper){display:none!important}.invoice-sheet{display:block!important}}
 
 .cg-sidebar{overflow-y:auto}
+.history-row-actions{display:flex;align-items:center;justify-content:flex-end;gap:12px;white-space:nowrap}
+.receipt-delete-action{display:inline-flex;align-items:center;gap:4px;background:#fef2f2;color:#dc2626!important;border:1px solid #fecaca;border-radius:6px;padding:5px 9px;font-size:9px;font-weight:600;cursor:pointer;transition:all .15s ease}
+.receipt-delete-action:hover{background:#fee2e2;color:#b91c1c!important;border-color:#f87171}
+.danger-btn{background:#fff!important;color:#dc2626!important;border:1px solid #fca5a5!important}
+.danger-btn:hover{background:#fef2f2!important;color:#b91c1c!important}
+.product-qty-badge{display:inline-block;font-size:9px;color:#057a55;background:#def7ec;padding:2px 8px;border-radius:12px;font-weight:600;margin:3px 0 6px}
