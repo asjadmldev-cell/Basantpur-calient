@@ -1,1 +1,1 @@
-export type Product={id:number;name:string;brand:string;price:number;mrp:number;category:number;rating:number;reviews:number;tag:string;spec:string;image?:string;sku?:string;custom?:boolean;quantity?:number};
+export type Product={id:number;name:string;brand:string;price:number;mrp:number;category:number;rating:number;reviews:number;tag:string;spec:string;image?:string;sku?:string;custom?:boolean;quantity?:number;pricePending?:boolean};

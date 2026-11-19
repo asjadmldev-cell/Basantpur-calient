@@ -1,7 +1,7 @@
-export type ReceiptItem = { id: string; name: string; sku: string; qty: number; unitPrice: number };
+export type ReceiptItem = { id: string; name: string; sku: string; qty: number; unitPrice: number; pricePending?: boolean; brand?: string };
 export type StoreProfile = { name: string; tagline: string; address: string; phone: string; email: string; gstin: string; logo: string; terms: string };
 export type TaxConfig = { mode: 'none' | 'split' | 'igst'; rate: number };
-export type ReceiptData = { tax?: TaxConfig; id: string; issuedAt: string; store: StoreProfile; customer: { name: string; phone: string; email: string; address: string; gstin: string }; items: ReceiptItem[]; discount: number; received: number; paymentMethod: string; reference: string; notes: string };
+export type ReceiptData = { cloudVersion?: number; tax?: TaxConfig; id: string; issuedAt: string; store: StoreProfile; customer: { name: string; phone: string; email: string; address: string; gstin: string }; items: ReceiptItem[]; discount: number; received: number; paymentMethod: string; reference: string; notes: string };
 export const defaultStore: StoreProfile = { name: 'Computer Care', tagline: 'Computer Components & IT Hardware', address: 'Main Road, Madarpur, Near Jalal Market, Siwan, Bihar – 841226', phone: '+91 98765 43210', email: 'info@computercare.in', gstin: '', logo: '/computer-care-logo.png', terms: 'Please retain this receipt for service and warranty enquiries. Product warranties are subject to the manufacturer’s terms.' };
 export const currency = (value: number) => new Intl.NumberFormat('en-IN', {style:'currency', currency:'INR', minimumFractionDigits:2}).format(value);
 export const paise = (value: number) => Math.round(value * 100);
@@ -26,6 +26,7 @@ export function validateReceipt(data: ReceiptData) {
  if(!data.items.length) return 'Add at least one product to your receipt.';
  for(const item of data.items){
   if(!item.name.trim()) return 'Every item needs a product name.';
+  if(item.pricePending) return `Enter the unit price for ${item.name}.`;
   if(!Number.isInteger(item.qty)||item.qty<1||item.qty>999) return 'Item quantities must be whole numbers from 1 to 999.';
   if(!Number.isFinite(item.unitPrice)||item.unitPrice<0||item.unitPrice>10000000) return 'Enter a valid unit price between ₹0 and ₹1,00,00,000.';
  }

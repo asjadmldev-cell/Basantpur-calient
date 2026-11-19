@@ -37,3 +37,6 @@ assert.ok(validateReceipt({...taxed,tax:{mode:'split',rate:-1}}));
 assert.ok(validateReceipt({...taxed,tax:{mode:'split',rate:NaN}}));
 assert.ok(validateReceipt({...taxed,tax:{mode:'split',rate:101}}));
 console.log('Invoice checks passed: split tax, IGST, discount-before-tax, legacy no-tax receipts, exact payments and invalid rates.');
+
+assert.match(validateReceipt({...data,items:[{...items[0],pricePending:true}]}),/Enter the unit price/);
+assert.equal(validateReceipt({...data,discount:0,received:0,items:[{...items[0],unitPrice:0,pricePending:false}]}),'');

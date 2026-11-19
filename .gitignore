@@ -2,3 +2,6 @@ node_modules
 dist
 *.tsbuildinfo
 .sites
+.env
+.env.*
+!.env.example
